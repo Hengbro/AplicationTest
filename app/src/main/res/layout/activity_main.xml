@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/tempat_makan"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_height"
+        android:text="@string/login"
+        android:layout_above="@+id/btnRegister"
+        android:layout_marginHorizontal="@dimen/marginMedium"
+        style="@style/Button.Normal"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_height"
+        android:text="@string/register"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/marginMedium"
+        android:layout_marginVertical="@dimen/marginNormal"
+        style="@style/Button.Normal"/>
+</RelativeLayout>

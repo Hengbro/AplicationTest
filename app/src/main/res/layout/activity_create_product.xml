@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ly_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/paddingNormal"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/buttonImage"
+            android:layout_height="@dimen/buttonImage"
+            android:padding="@dimen/buttonImagePadding"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_asset_left"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_toEndOf="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Product"
+            android:textColor="@color/dark"
+            android:layout_centerVertical="true"
+            android:textAppearance="@style/textAppearance.Body2.Bold"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnAdd"
+            android:layout_width="@dimen/buttonImage"
+            android:layout_height="@dimen/buttonImage"
+            android:src="@drawable/ic_asset_delete_forever"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/buttonImagePadding"
+            android:visibility="gone"
+            app:tint="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/paddingMedium"
+        android:layout_below="@+id/ly_toolbar"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+
+            android:layout_marginTop="@dimen/marginSmall"
+            android:textAppearance="@style/textAppearance.Body2.Bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputLayout.Rounded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginNormal">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_height"
+                android:hint="@string/product_name"
+                android:inputType="textPersonName"
+                android:padding="0dp"
+                android:paddingStart="@dimen/paddingNormal"
+                android:textAppearance="@style/textAppearance.Body2"
+                tools:ignore="RtlSymmetry" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+
+            android:layout_marginTop="@dimen/marginLarge"
+            android:textAppearance="@style/textAppearance.Body2.Bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputLayout.Rounded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginNormal">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/description_product"
+                android:inputType="text"
+                android:padding="0dp"
+                android:minLines="3"
+                android:paddingStart="@dimen/paddingNormal"
+                android:textAppearance="@style/textAppearance.Body2"
+                tools:ignore="RtlSymmetry" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Variant Product"
+            android:layout_marginTop="@dimen/marginLarge"
+            android:textAppearance="@style/textAppearance.Body2.Bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddSatu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/medium_height"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/marginNormal"
+            style="@style/Button.OutlinePrimary"
+            android:text="Add Variant product 1"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddDua"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/medium_height"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/marginNormal"
+            style="@style/Button.OutlinePrimary"
+            android:text="Add Variant product 2"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddTiga"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/medium_height"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/marginNormal"
+            style="@style/Button.OutlinePrimary"
+            android:text="Add Variant product 3"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/medium_height"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:text="@string/save"/>
+
+</RelativeLayout>

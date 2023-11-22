@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AplicationTest</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="name">Name</string>
+    <string name="jhon_dae">Jhon dae</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="passwordstart">* * * * * *</string>
+    <string name="password_confirm">Password confirm</string>
+    <string name="search">Search</string>
+    <string name="tidak_ada_data">Tidak ada data</string>
+    <string name="product_name">Product Name</string>
+    <string name="description">Description</string>
+    <string name="description_product">Description product</string>
+    <string name="save">Save</string>
+</resources>
